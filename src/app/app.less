@@ -1,0 +1,65 @@
+// Importando variables del archivo global
+@import '../styles.less';
+
+// Estilos específicos del componente app
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  .header {
+    background-color: @primary-color;
+    color: white;
+    padding: 20px;
+    .border-radius(8px);
+    .box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    
+    &:hover {
+      background-color: lighten(@primary-color, 10%);
+      transition: background-color 0.3s ease;
+    }
+  }
+  
+  .content {
+    margin-top: 30px;
+    
+    .card {
+      background: white;
+      padding: 25px;
+      .border-radius(12px);
+      .box-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+      margin-bottom: 20px;
+      
+      &:hover {
+        transform: translateY(-2px);
+        .box-shadow(0 4px 16px rgba(0, 0, 0, 0.15));
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+// Nested rules con Less
+.portfolio-section {
+  .project-item {
+    padding: 15px;
+    border-left: 4px solid @secondary-color;
+    margin-bottom: 15px;
+    
+    .project-title {
+      color: @primary-color;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    
+    .project-description {
+      color: lighten(#333, 20%);
+      margin-top: 8px;
+    }
+  }
+}
