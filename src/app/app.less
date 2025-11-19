@@ -1,65 +1,187 @@
 // Importando variables del archivo global
 @import '../styles.less';
 
-// Estilos específicos del componente app
+// Estilos para el layout principal
 .app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  min-height: 100vh;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  padding: 0 50px;
+  background: #001529;
   
-  .header {
-    background-color: @primary-color;
+  .logo {
+    float: left;
+    display: flex;
+    align-items: center;
     color: white;
-    padding: 20px;
-    .border-radius(8px);
-    .box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
     
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    
-    &:hover {
-      background-color: lighten(@primary-color, 10%);
-      transition: background-color 0.3s ease;
+      margin-left: 15px;
+      margin-bottom: 0;
+      color: white;
+      font-size: 20px;
     }
   }
   
-  .content {
-    margin-top: 30px;
-    
-    .card {
-      background: white;
-      padding: 25px;
-      .border-radius(12px);
-      .box-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+  .header-menu {
+    float: right;
+    border-bottom: none;
+  }
+}
+
+.content {
+  padding: 24px 50px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 134px);
+  
+  .inner-content {
+    background: white;
+    padding: 24px;
+    .border-radius(8px);
+    min-height: 360px;
+  }
+}
+
+.welcome-card {
+  margin-bottom: 24px;
+  
+  .ant-card-body {
+    p {
+      font-size: 16px;
       margin-bottom: 20px;
+      color: @text-color;
+    }
+  }
+}
+
+.stats-section {
+  margin: 24px 0;
+  padding: 24px;
+  background: #fafafa;
+  .border-radius(8px);
+  
+  .ant-statistic {
+    text-align: center;
+    
+    .ant-statistic-title {
+      font-size: 14px;
+      color: @text-color-secondary;
+    }
+    
+    .ant-statistic-content {
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  background: #001529;
+  
+  .footer-content {
+    color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    
+    p {
+      margin: 0;
+    }
+    
+    .ant-btn-link {
+      color: rgba(255, 255, 255, 0.65);
       
       &:hover {
-        transform: translateY(-2px);
-        .box-shadow(0 4px 16px rgba(0, 0, 0, 0.15));
-        transition: all 0.3s ease;
+        color: white;
       }
     }
   }
 }
 
-// Nested rules con Less
-.portfolio-section {
-  .project-item {
-    padding: 15px;
-    border-left: 4px solid @secondary-color;
-    margin-bottom: 15px;
+// Estilos personalizados para componentes NG-ZORRO
+.ant-card {
+  margin-bottom: 24px;
+  
+  &:hover {
+    .box-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+  }
+}
+
+.ant-timeline {
+  .ant-timeline-item {
+    .ant-timeline-item-content {
+      p:first-child {
+        font-weight: 600;
+        color: @primary-color;
+        margin-bottom: 4px;
+      }
+      
+      p:nth-child(2) {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      
+      p:last-child {
+        color: @text-color-secondary;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.ant-tag {
+  margin: 4px 8px 4px 0;
+  padding: 4px 12px;
+  font-size: 13px;
+  .border-radius(6px);
+  
+  &:hover {
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
     
-    .project-title {
-      color: @primary-color;
-      font-weight: bold;
-      font-size: 1.2em;
+    .logo h1 {
+      display: none;
     }
     
-    .project-description {
-      color: lighten(#333, 20%);
-      margin-top: 8px;
+    .header-menu {
+      position: relative;
+      top: -5px;
+    }
+  }
+  
+  .content {
+    padding: 16px 20px;
+    
+    .inner-content {
+      padding: 16px;
+    }
+  }
+  
+  .footer .footer-content {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+  
+  .stats-section {
+    .ant-col {
+      margin-bottom: 16px;
     }
   }
 }
