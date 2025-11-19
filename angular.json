@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "portfolio-app": {
+    "portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -87,10 +87,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portfolio-app:build:production"
+              "buildTarget": "portfolio:build:production"
             },
             "development": {
-              "buildTarget": "portfolio-app:build:development"
+              "buildTarget": "portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
