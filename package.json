@@ -6,7 +6,15 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "extract-i18n": "ng extract-i18n",
+    "build:es": "ng build --configuration=es",
+    "build:en": "ng build --configuration=en",
+    "build:ca": "ng build --configuration=ca",
+    "build:i18n": "npm run build:es && npm run build:en && npm run build:ca",
+    "serve:es": "ng serve --configuration=development",
+    "serve:en": "ng serve --configuration=development --locale=en",
+    "serve:ca": "ng serve --configuration=development --locale=ca"
   },
   "prettier": {
     "printWidth": 100,
@@ -28,6 +36,8 @@
     "@angular/forms": "^20.3.0",
     "@angular/platform-browser": "^20.3.0",
     "@angular/router": "^20.3.0",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^17.0.0",
     "ng-zorro-antd": "^20.4.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
