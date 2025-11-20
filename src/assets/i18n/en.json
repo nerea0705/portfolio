@@ -1,0 +1,159 @@
+{
+  "home": {
+    "heroTitle": "Hi, I'm Nerea",
+    "heroTyping": "I build efficient, elegant and maintainable interfaces with Angular & NG Zorro.",
+    "heroSubtitle": "Computer Engineer · Frontend Developer · Proactive, creative and results-oriented.",
+    "btnExperience": "See experience",
+    "btnProjects": "See projects",
+    "btnCV": "Download CV",
+    "claim": {
+      "modular": "+ modular architecture",
+      "performance": "+ performance",
+      "accessibility": "+ accessibility",
+      "scalability": "+ scalability"
+    }
+  },
+  "education": {
+    "title": "My technical and academic background",
+    "degree": "Degree in Computer Engineering",
+    "degreeYears": "2017–2021 · Universitat Jaume I",
+    "cfgs": "Higher Technician in Administration and Finance",
+    "cfgsYears": "2015–2017",
+    "cfgm": "Middle Technician in Administrative Management",
+    "cfgmYears": "2013–2015",
+    "eso": "Secondary Education",
+    "esoYears": "2009–2013"
+  },
+  "about": {
+    "title": "My way of working",
+    "main": "I'm a computer engineer passionate about frontend development and elegant solutions. I describe myself as proactive, enthusiastic and a fast learner, used to teamwork and facing new challenges with creativity and precision. I enjoy turning complex requirements into clear, accessible and maintainable interfaces, relying on best practices, clean architecture and modern tools.",
+    "philosophyTitle": "Development philosophy",
+    "philosophy": {
+      "efficiency": "Efficiency and performance as a standard.",
+      "code": "Clear and maintainable code.",
+      "ux": "Simple but careful UX.",
+      "collaboration": "Collaborative work and fluent communication."
+    },
+    "softSkillsTitle": "Highlighted soft skills",
+    "softSkills": {
+      "proactivity": "Proactivity",
+      "communication": "Direct and natural communication",
+      "organization": "Organization and attention to detail",
+      "problemSolving": "Problem solving",
+      "adaptation": "Adaptation to new environments"
+    }
+  },
+  "experience": {
+    "title": "My professional journey",
+    "epigram": {
+      "header": "Epigram Technologies (2023 – Present)",
+      "role": "Web Developer – Full Stack (frontend focus)",
+      "fullstack": "Development of web and desktop applications in Full Stack architecture.",
+      "backend": "Backend with .NET Core (C#) and RESTful API design.",
+      "frontend": "Frontend in Angular + NG Zorro, integrating reactive logic with RxJS.",
+      "docker": "Container and environment management with Docker.",
+      "cicd": "Automated CI/CD with Jenkins.",
+      "git": "Version control with Git.",
+      "analysis": "Active participation in analysis meetings, functional definition and technical design."
+    },
+    "torrecid": {
+      "header": "Torrecid, S.A. (2021 – 2023)",
+      "role": "Web Developer – Angular Frontend",
+      "migration": "Responsible for the complete migration of a business application to the latest version of Angular.",
+      "optimization": "Performance, scalability and compatibility optimization.",
+      "ui": "Development of reusable, accessible and responsive interfaces with NG Zorro.",
+      "architecture": "Application of modular architecture, lazy loading and reactive patterns with RxJS.",
+      "refactor": "Legacy code refactoring improving maintainability and technical standards.",
+      "demoUIKit": "NG Zorro UI Kit",
+      "demoPagination": "Modular pagination"
+    },
+    "other": {
+      "header": "Other experiences",
+      "internship": "External internship – Torrecid S.A. (2021)",
+      "waitress1": "Waitress – Xavi Adell, S.L. (2018–2020)",
+      "waitress2": "Waitress – Xiringuito Delicies Beach (2019)",
+      "cashier": "Cashier – Caprabo S.A. (2017)",
+      "message": "You've worked since you were young, you're responsible, resourceful and have a strong work ethic."
+    }
+  },
+  "projects": {
+    "title": "What I can build",
+    "uiLibrary": {
+      "title": "UI Library NG-Zorro Extended",
+      "extra": "UI Demo",
+      "desc": "Small library of custom components (cards, dashboards, tables with advanced filters).",
+      "tag1": "NG Zorro",
+      "tag2": "UI Design"
+    },
+    "dashboard": {
+      "title": "Modular Business Dashboard",
+      "extra": "KPIs Demo",
+      "desc": "Demo app for business KPIs with lazy modules, optimized services and charts.",
+      "tag1": "Architecture",
+      "tag2": "Lazy Loading"
+    },
+    "taskflow": {
+      "title": "API + Angular Front 'TaskFlow'",
+      "extra": "Full Stack Demo",
+      "desc": "Mini Full Stack project (.NET Core + Angular) with authentication and CRUD.",
+      "tag1": "Full Stack",
+      "tag2": "Authentication"
+    },
+    "refactor": {
+      "title": "Refactor Challenge",
+      "extra": "Before ↔ After",
+      "desc": "Example showing how to improve legacy code and apply technical criteria.",
+      "tag1": "Refactor",
+      "tag2": "Clean Code"
+    }
+  },
+  "skills": {
+    "title": "My tech stack",
+    "languages": {
+      "title": "Languages and frameworks",
+      "csharp": "C# (.NET)",
+      "ts": "TypeScript",
+      "js": "JavaScript",
+      "html": "HTML5",
+      "css": "CSS3"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "angular": "Angular",
+      "ngzorro": "NG Zorro",
+      "rxjs": "RxJS"
+    },
+    "backend": {
+      "title": "Backend",
+      "aspnet": "ASP.NET Core / MVC / Web API",
+      "rest": "REST Services",
+      "sql": "SQL Server"
+    },
+    "devops": {
+      "title": "DevOps",
+      "docker": "Docker",
+      "jenkins": "Jenkins",
+      "git": "Git"
+    }
+  },
+  "contact": {
+    "title": "Let's talk",
+    "name": "Nerea Marco",
+    "phone": "619 262 735",
+    "email": "nerea0705@gmail.com",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "nameRequired": "Name is required.",
+      "email": "Email",
+      "emailPlaceholder": "Your email",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Enter a valid email.",
+      "message": "Message",
+      "messagePlaceholder": "Write your message",
+      "messageRequired": "Message is required.",
+      "messageMinLength": "Message must be at least 10 characters.",
+      "send": "Send"
+    }
+  }
+}

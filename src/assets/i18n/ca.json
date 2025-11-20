@@ -1,0 +1,159 @@
+{
+  "home": {
+    "heroTitle": "Hola, sóc Nerea",
+    "heroTyping": "Construeixo interfícies eficients, elegants i mantenibles amb Angular & NG Zorro.",
+    "heroSubtitle": "Enginyera informàtica · Frontend Developer · Proactiva, creativa i orientada a resultats.",
+    "btnExperience": "Veure experiència",
+    "btnProjects": "Veure projectes",
+    "btnCV": "Descarregar CV",
+    "claim": {
+      "modular": "+ arquitectura modular",
+      "performance": "+ rendiment",
+      "accessibility": "+ accessibilitat",
+      "scalability": "+ escalabilitat"
+    }
+  },
+  "education": {
+    "title": "La meva base tècnica i acadèmica",
+    "degree": "Grau en Enginyeria Informàtica",
+    "degreeYears": "2017–2021 · Universitat Jaume I",
+    "cfgs": "CFGS Administració i Finances",
+    "cfgsYears": "2015–2017",
+    "cfgm": "CFGM Gestió Administrativa",
+    "cfgmYears": "2013–2015",
+    "eso": "ESO",
+    "esoYears": "2009–2013"
+  },
+  "about": {
+    "title": "La meva manera de treballar",
+    "main": "Sóc una enginyera informàtica apassionada pel desenvolupament frontend i les solucions elegants. Em descric com una persona proactiva, entusiasta i amb gran capacitat d'aprenentatge, acostumada a treballar en equip i a afrontar nous reptes amb creativitat i precisió. Gaudeixo convertint requisits complexos en interfícies clares, accessibles i mantenibles, recolzant-me en bones pràctiques, arquitectura neta i eines modernes.",
+    "philosophyTitle": "Filosofia de desenvolupament",
+    "philosophy": {
+      "efficiency": "Eficiència i rendiment com a estàndard.",
+      "code": "Codi clar i mantenible.",
+      "ux": "UX simple però cuidada.",
+      "collaboration": "Treball col·laboratiu i comunicació fluida."
+    },
+    "softSkillsTitle": "Soft skills destacades",
+    "softSkills": {
+      "proactivity": "Proactivitat",
+      "communication": "Comunicació directa i natural",
+      "organization": "Organització i atenció al detall",
+      "problemSolving": "Resolució de problemes",
+      "adaptation": "Adaptació a nous entorns"
+    }
+  },
+  "experience": {
+    "title": "El meu recorregut professional",
+    "epigram": {
+      "header": "Epigram Technologies (2023 – Actualitat)",
+      "role": "Desenvolupadora Web – Full Stack (enfocament frontend)",
+      "fullstack": "Desenvolupament d'aplicacions web i d'escriptori en arquitectura Full Stack.",
+      "backend": "Backend amb .NET Core (C#) i disseny d'APIs RESTful.",
+      "frontend": "Frontend en Angular + NG Zorro, integrant lògica reactiva amb RxJS.",
+      "docker": "Gestió de contenidors i entorns amb Docker.",
+      "cicd": "CI/CD automatitzada amb Jenkins.",
+      "git": "Control de versions amb Git.",
+      "analysis": "Participació activa en reunions d'anàlisi, definició funcional i disseny tècnic."
+    },
+    "torrecid": {
+      "header": "Torrecid, S.A. (2021 – 2023)",
+      "role": "Desenvolupadora Web – Frontend Angular",
+      "migration": "Responsable de la migració completa d'una aplicació empresarial a l'última versió d'Angular.",
+      "optimization": "Optimització de rendiment, escalabilitat i compatibilitat.",
+      "ui": "Desenvolupament d'interfícies reutilitzables, accessibles i responsive amb NG Zorro.",
+      "architecture": "Aplicació d'arquitectura modular, lazy loading i patrons reactius amb RxJS.",
+      "refactor": "Refactorització de codi legacy millorant mantenibilitat i estàndards tècnics.",
+      "demoUIKit": "UI Kit NG Zorro",
+      "demoPagination": "Paginació modular"
+    },
+    "other": {
+      "header": "Altres experiències",
+      "internship": "Pràctiques externes – Torrecid S.A. (2021)",
+      "waitress1": "Cambrera – Xavi Adell, S.L. (2018–2020)",
+      "waitress2": "Cambrera – Xiringuito Delicies Beach (2019)",
+      "cashier": "Caixera – Caprabo S.A. (2017)",
+      "message": "Has treballat des de jove, ets responsable, resolutiva i amb cultura d'esforç."
+    }
+  },
+  "projects": {
+    "title": "El que puc construir",
+    "uiLibrary": {
+      "title": "UI Library NG-Zorro Extended",
+      "extra": "Demo UI",
+      "desc": "Petita llibreria de components personalitzats (cards, dashboards, taules amb filtres avançats).",
+      "tag1": "NG Zorro",
+      "tag2": "Disseny UI"
+    },
+    "dashboard": {
+      "title": "Dashboard Empresarial Modular",
+      "extra": "Demo KPIs",
+      "desc": "App demo per a KPIs empresarials amb mòduls lazy, serveis optimitzats i charts.",
+      "tag1": "Arquitectura",
+      "tag2": "Lazy Loading"
+    },
+    "taskflow": {
+      "title": "API + Front Angular 'TaskFlow'",
+      "extra": "Demo Full Stack",
+      "desc": "Mini projecte Full Stack (.NET Core + Angular) amb autenticació i CRUD.",
+      "tag1": "Full Stack",
+      "tag2": "Autenticació"
+    },
+    "refactor": {
+      "title": "Refactor Challenge",
+      "extra": "Abans ↔ Després",
+      "desc": "Exemple on es mostra com millorar codi legacy i aplicar criteri tècnic.",
+      "tag1": "Refactor",
+      "tag2": "Clean Code"
+    }
+  },
+  "skills": {
+    "title": "El meu stack tecnològic",
+    "languages": {
+      "title": "Llenguatges i frameworks",
+      "csharp": "C# (.NET)",
+      "ts": "TypeScript",
+      "js": "JavaScript",
+      "html": "HTML5",
+      "css": "CSS3"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "angular": "Angular",
+      "ngzorro": "NG Zorro",
+      "rxjs": "RxJS"
+    },
+    "backend": {
+      "title": "Backend",
+      "aspnet": "ASP.NET Core / MVC / Web API",
+      "rest": "Serveis REST",
+      "sql": "SQL Server"
+    },
+    "devops": {
+      "title": "DevOps",
+      "docker": "Docker",
+      "jenkins": "Jenkins",
+      "git": "Git"
+    }
+  },
+  "contact": {
+    "title": "Parlem",
+    "name": "Nerea Marco",
+    "phone": "619 262 735",
+    "email": "nerea0705@gmail.com",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "El teu nom",
+      "nameRequired": "El nom és obligatori.",
+      "email": "Email",
+      "emailPlaceholder": "El teu email",
+      "emailRequired": "L'email és obligatori.",
+      "emailInvalid": "Introdueix un email vàlid.",
+      "message": "Missatge",
+      "messagePlaceholder": "Escriu el teu missatge",
+      "messageRequired": "El missatge és obligatori.",
+      "messageMinLength": "El missatge ha de tenir almenys 10 caràcters.",
+      "send": "Enviar"
+    }
+  }
+}

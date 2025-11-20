@@ -1,1 +1,58 @@
 @import '../styles.less';
+
+.menu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.custom-menu {
+	background: transparent;
+	border-bottom: 2px solid fade(@primary-color, 20%);
+	box-shadow: none;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+}
+
+.custom-menu-item {
+	color: @primary-color;
+	font-weight: 500;
+	padding: 0 24px;
+	position: relative;
+	transition: color 0.2s;
+}
+
+.custom-menu-item.active,
+.custom-menu-item:hover {
+	color: @secondary-color;
+}
+
+.custom-menu-item.active::after,
+.custom-menu-item:hover::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	width: 60%;
+	height: 3px;
+	background: linear-gradient(90deg, @primary-color 0%, @secondary-color 100%);
+	border-radius: 2px;
+	transform: translateX(-50%) scaleX(1);
+	transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.custom-menu-item::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	width: 0;
+	height: 3px;
+	background: linear-gradient(90deg, @primary-color 0%, @secondary-color 100%);
+	border-radius: 2px;
+	transform: translateX(-50%) scaleX(0);
+	transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}

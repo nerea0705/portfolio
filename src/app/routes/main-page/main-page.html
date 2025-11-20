@@ -1,1 +1,31 @@
-<button nz-button nzType="primary">TEST</button>
+<div class="hero">
+	<div class="hero-animation">
+		<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="60" cy="60" r="50" stroke="#00d3d3" stroke-width="4" stroke-dasharray="314" stroke-dashoffset="0">
+				<animate attributeName="stroke-dashoffset" from="314" to="0" dur="2s" fill="freeze" />
+			</circle>
+			<circle cx="60" cy="60" r="35" stroke="#ff4081" stroke-width="3" stroke-dasharray="220" stroke-dashoffset="0">
+				<animate attributeName="stroke-dashoffset" from="220" to="0" dur="2.5s" fill="freeze" />
+			</circle>
+			<circle cx="60" cy="60" r="20" stroke="#333" stroke-width="2" stroke-dasharray="125" stroke-dashoffset="0">
+				<animate attributeName="stroke-dashoffset" from="125" to="0" dur="3s" fill="freeze" />
+			</circle>
+		</svg>
+	</div>
+	<h1 class="hero-title">{{ 'home.heroTitle' | translate }}</h1>
+	<div class="hero-typing">{{ typingText }}</div>
+	<h2 class="hero-subtitle">
+		{{ 'home.heroSubtitle' | translate }}
+	</h2>
+	<div class="hero-actions">
+		<button nz-button nzType="primary">{{ 'home.btnExperience' | translate }}</button>
+		<button nz-button nzType="default">{{ 'home.btnProjects' | translate }}</button>
+		<button nz-button nzType="dashed">{{ 'home.btnCV' | translate }}</button>
+	</div>
+	<div class="hero-claim">
+		<nz-tag nzColor="cyan">{{ 'home.claim.modular' | translate }}</nz-tag>
+		<nz-tag nzColor="blue">{{ 'home.claim.performance' | translate }}</nz-tag>
+		<nz-tag nzColor="purple">{{ 'home.claim.accessibility' | translate }}</nz-tag>
+		<nz-tag nzColor="green">{{ 'home.claim.scalability' | translate }}</nz-tag>
+	</div>
+</div>

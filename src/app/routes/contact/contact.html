@@ -1,0 +1,35 @@
+<div class="contact-container">
+	<h1 class="contact-title">{{ 'contact.title' | translate }}</h1>
+	<div class="contact-info">
+		<nz-icon nzType="user" nzTheme="outline"></nz-icon> {{ 'contact.name' | translate }}<br>
+		<nz-icon nzType="phone" nzTheme="outline"></nz-icon> {{ 'contact.phone' | translate }}<br>
+		<nz-icon nzType="mail" nzTheme="outline"></nz-icon> {{ 'contact.email' | translate }}
+	</div>
+	<nz-divider></nz-divider>
+	<form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+		<nz-form-item>
+			<nz-form-label [nzFor]="'name'" nzRequired>{{ 'contact.form.name' | translate }}</nz-form-label>
+			<nz-form-control [nzValidateStatus]="contactForm.controls['name']">
+				<input nz-input id="name" formControlName="name" required [placeholder]="'contact.form.namePlaceholder' | translate" />
+				<div class="ant-form-item-explain" *ngIf="contactForm.controls['name'].hasError('required') && contactForm.controls['name'].touched">{{ 'contact.form.nameRequired' | translate }}</div>
+			</nz-form-control>
+		</nz-form-item>
+		<nz-form-item>
+			<nz-form-label [nzFor]="'email'" nzRequired>{{ 'contact.form.email' | translate }}</nz-form-label>
+			<nz-form-control [nzValidateStatus]="contactForm.controls['email']">
+				<input nz-input id="email" formControlName="email" type="email" required [placeholder]="'contact.form.emailPlaceholder' | translate" />
+				<div class="ant-form-item-explain" *ngIf="contactForm.controls['email'].hasError('required') && contactForm.controls['email'].touched">{{ 'contact.form.emailRequired' | translate }}</div>
+				<div class="ant-form-item-explain" *ngIf="contactForm.controls['email'].hasError('email') && contactForm.controls['email'].touched">{{ 'contact.form.emailInvalid' | translate }}</div>
+			</nz-form-control>
+		</nz-form-item>
+		<nz-form-item>
+			<nz-form-label [nzFor]="'message'" nzRequired>{{ 'contact.form.message' | translate }}</nz-form-label>
+			<nz-form-control [nzValidateStatus]="contactForm.controls['message']">
+				<textarea nz-input id="message" formControlName="message" rows="4" required [placeholder]="'contact.form.messagePlaceholder' | translate"></textarea>
+				<div class="ant-form-item-explain" *ngIf="contactForm.controls['message'].hasError('required') && contactForm.controls['message'].touched">{{ 'contact.form.messageRequired' | translate }}</div>
+				<div class="ant-form-item-explain" *ngIf="contactForm.controls['message'].hasError('minlength') && contactForm.controls['message'].touched">{{ 'contact.form.messageMinLength' | translate }}</div>
+			</nz-form-control>
+		</nz-form-item>
+		<button nz-button nzType="primary" type="submit" [disabled]="contactForm.invalid">{{ 'contact.form.send' | translate }}</button>
+	</form>
+</div>

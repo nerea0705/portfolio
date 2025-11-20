@@ -1,1 +1,19 @@
-<router-outlet></router-outlet>
+<nz-layout>
+	<nz-header>
+		<div class="menu-container">
+			<ul nz-menu nzTheme="light" nzMode="horizontal" class="custom-menu">
+				<li nz-menu-item routerLink="/" routerLinkActive="active" class="custom-menu-item">Home</li>
+				<li nz-menu-item routerLink="/about" routerLinkActive="active" class="custom-menu-item">Sobre mí</li>
+				<li nz-menu-item routerLink="/experience" routerLinkActive="active" class="custom-menu-item">Experiencia</li>
+				<li nz-menu-item routerLink="/projects" routerLinkActive="active" class="custom-menu-item">Proyectos</li>
+				<li nz-menu-item routerLink="/skills" routerLinkActive="active" class="custom-menu-item">Skills</li>
+				<li nz-menu-item routerLink="/education" routerLinkActive="active" class="custom-menu-item">Formación</li>
+				<li nz-menu-item routerLink="/contact" routerLinkActive="active" class="custom-menu-item">Contacto</li>
+				<li nz-menu-item routerLink="/lab" routerLinkActive="active" class="custom-menu-item">Laboratorio</li>
+			</ul>
+		</div>
+	</nz-header>
+	<nz-content>
+		<router-outlet></router-outlet>
+	</nz-content>
+</nz-layout>
