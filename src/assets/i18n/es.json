@@ -1,4 +1,13 @@
 {
+  "menu": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Skills",
+    "education": "Formación",
+    "contact": "Contacto"
+  },
   "home": {
     "heroTitle": "Hola, soy Nerea",
     "heroTyping": "Construyo interfaces eficientes, elegantes y mantenibles con Angular & NG Zorro.",
