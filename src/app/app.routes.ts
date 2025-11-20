@@ -6,7 +6,7 @@ import { Projects } from './routes/projects/projects';
 import { Skills } from './routes/skills/skills';
 import { Education } from './routes/education/education';
 import { Contact } from './routes/contact/contact';
-import { Lab } from './routes/lab/lab';
+
 
 export const routes: Routes = [
     { path: '', component: MainPage },
@@ -16,5 +16,5 @@ export const routes: Routes = [
     { path: 'skills', component: Skills },
     { path: 'education', component: Education },
     { path: 'contact', component: Contact },
-    { path: 'lab', component: Lab }
+
 ];

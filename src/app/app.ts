@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 
@@ -10,7 +10,8 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
     CommonModule,
     RouterOutlet,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    RouterModule
   ],
   templateUrl: './app.html',
   styleUrl: './app.less'
