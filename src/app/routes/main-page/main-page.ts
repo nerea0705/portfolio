@@ -36,8 +36,17 @@ export class MainPage {
   }
 
   ngOnInit() {
+    this.loadTypingText();
+    this.translateService.onLangChange.subscribe(() => {
+      this.loadTypingText();
+    });
+  }
+
+  loadTypingText() {
     this.translateService.get('home.heroTyping').subscribe((text: string) => {
       this.fullText = text;
+      this.typingText = '';
+      this.typingIndex = 0;
       this.typeText();
     });
   }
