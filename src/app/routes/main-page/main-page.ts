@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzTagModule } from 'ng-zorro-antd/tag';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-page',
@@ -16,12 +17,29 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './main-page.less',
 })
 export class MainPage {
-  fullText = 'Construyo interfaces eficientes, elegantes y mantenibles con Angular & NG Zorro.';
-  typingText = '';
-  private typingIndex = 0;
+
+  typingText: string = '';
+  fullText: string = '';
+  private typingIndex: number = 0;
+
+  constructor(
+    private translateService: TranslateService,
+    private router: Router
+  ) {}
+  
+  goToExperience() {
+    this.router.navigate(['/experience']);
+  }
+
+  goToProjects() {
+    this.router.navigate(['/projects']);
+  }
 
   ngOnInit() {
-    this.typeText();
+    this.translateService.get('home.heroTyping').subscribe((text: string) => {
+      this.fullText = text;
+      this.typeText();
+    });
   }
 
   typeText() {
@@ -30,5 +48,15 @@ export class MainPage {
       this.typingIndex++;
       setTimeout(() => this.typeText(), 35);
     }
+  }
+
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/documents/CV_2025.pdf';
+    link.download = 'CV_2025.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   }
 }

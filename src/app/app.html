@@ -1,23 +1,67 @@
 <nz-layout>
 	<nz-header>
-		<div class="menu-container" style="display: flex; align-items: center; justify-content: space-between;">
-				<ul nz-menu nzTheme="light" nzMode="horizontal" class="custom-menu">
-				<li nz-menu-item routerLink="/" routerLinkActive="active" class="custom-menu-item">{{ 'menu.home' | translate }}</li>
-				<li nz-menu-item routerLink="/about" routerLinkActive="active" class="custom-menu-item">{{ 'menu.about' | translate }}</li>
-				<li nz-menu-item routerLink="/experience" routerLinkActive="active" class="custom-menu-item">{{ 'menu.experience' | translate }}</li>
-				<li nz-menu-item routerLink="/projects" routerLinkActive="active" class="custom-menu-item">{{ 'menu.projects' | translate }}</li>
-				<li nz-menu-item routerLink="/skills" routerLinkActive="active" class="custom-menu-item">{{ 'menu.skills' | translate }}</li>
-				<li nz-menu-item routerLink="/education" routerLinkActive="active" class="custom-menu-item">{{ 'menu.education' | translate }}</li>
-				<li nz-menu-item routerLink="/contact" routerLinkActive="active" class="custom-menu-item">{{ 'menu.contact' | translate }}</li>
-				</ul>
-				<nz-select [(ngModel)]="currentLang" (ngModelChange)="changeLang($event)" style="width: 120px; margin-left: 24px;">
+		<div class="menu-container">
+			<ul nz-menu nzMode="horizontal" class="custom-menu">
+				<li nz-menu-item 
+					routerLink="/" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.home' | translate }}
+				</li>
+				<li nz-menu-item 
+					routerLink="/about" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.about' | translate }}
+				</li>
+				<li nz-menu-item 
+					routerLink="/experience" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.experience' | translate }}
+				</li>
+				<li nz-menu-item 
+					routerLink="/projects" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.projects' | translate }}
+				</li>
+				<li nz-menu-item 
+					routerLink="/skills" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.skills' | translate }}
+				</li>
+				<li nz-menu-item 
+					routerLink="/education" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.education' | translate }}
+				</li>
+				<li nz-menu-item 
+					routerLink="/contact" 
+					routerLinkActive="active" 
+					class="custom-menu-item">
+					{{ 'menu.contact' | translate }}
+				</li>
+			</ul>
+			<div class="menu-right-items">
+				<nz-select 
+					[(ngModel)]="currentLang" 
+					(ngModelChange)="changeLang($event)">
 					<nz-option nzValue="es" nzLabel="ES" />
 					<nz-option nzValue="ca" nzLabel="CA" />
 					<nz-option nzValue="en" nzLabel="EN" />
 				</nz-select>
-				<button nz-button (click)="toggleTheme()" style="margin-left: 16px;">
-				  {{ isDark ? '🌙 Oscuro' : '☀️ Claro' }}
+				<button 
+					nz-button 
+					(click)="toggleTheme()" 
+					nzType="primary" 
+					nzShape="circle">
+					<nz-icon *ngIf="isDark" nzType="moon"></nz-icon>
+					<nz-icon *ngIf="!isDark" nzType="sun"></nz-icon>
 				</button>
+			</div>
 		</div>
 	</nz-header>
 	<nz-content>

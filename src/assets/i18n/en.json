@@ -16,10 +16,10 @@
     "btnProjects": "See projects",
     "btnCV": "Download CV",
     "claim": {
-      "modular": "+ modular architecture",
-      "performance": "+ performance",
-      "accessibility": "+ accessibility",
-      "scalability": "+ scalability"
+      "modular": "Modular architecture",
+      "performance": "Performance",
+      "accessibility": "Accessibility",
+      "scalability": "Scalability"
     }
   },
   "education": {

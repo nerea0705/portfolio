@@ -1,4 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection, importProvidersFrom } from '@angular/core';
+import { provideNzIcons } from 'ng-zorro-antd/icon';
+import * as AllIcons from '@ant-design/icons-angular/icons';
 import { provideRouter } from '@angular/router';
 import { provideNzI18n, es_ES } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
@@ -23,6 +25,7 @@ export const appConfig: ApplicationConfig = {
     provideNzI18n(es_ES),
     provideAnimationsAsync(),
     provideHttpClient(),
+    provideNzIcons(Object.values(AllIcons)),
     importProvidersFrom(
       TranslateModule.forRoot({
         loader: {

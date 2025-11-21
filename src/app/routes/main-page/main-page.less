@@ -1,19 +1,40 @@
-// Hero principal
-.hero {
+@import "../../../styles.less";
+
 .hero {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: 70vh;
+	min-height: 100vh;
 	padding: 48px 16px 0 16px;
-	background: linear-gradient(120deg, fade(@primary-color, 10%) 0%, #fff 100%);
+	background: linear-gradient(180deg, #fff 0%, rgba(@primary-color, 0.10) 100%);
 	position: relative;
 }
 
-.hero-animation {
-	margin-bottom: 32px;
-	animation: float 2.5s infinite ease-in-out alternate;
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, @primary-color 40%, #fff 100%);
+	box-shadow: 0 8px 32px fade(@primary-color, 18%);
+	position: relative;
+	overflow: hidden;
+}
+
+.logo-img {
+	width: 180px;
+	height: 180px;
+	object-fit: contain;
+	filter: drop-shadow(0 2px 12px fade(@primary-color, 40%));
+	transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), filter 0.3s;
+}
+
+.logo-container:hover .logo-img {
+	transform: scale(1.08) rotate(-8deg);
+	filter: drop-shadow(0 8px 24px fade(@primary-color, 60%));
 }
 
 @keyframes float {
@@ -29,18 +50,11 @@
 	transform: translateY(-2px) scale(1.04);
 }
 
-.hero-title {
-	font-size: 3rem;
-	font-weight: bold;
-	color: @primary-color;
-	margin-bottom: 16px;
-	letter-spacing: 1px;
-}
-
 .hero-typing {
 	font-size: 1.5rem;
 	color: @secondary-color;
 	margin-bottom: 12px;
+	margin-top: 42px;
 	min-height: 32px;
 	animation: fadeIn 1.2s;
 }
@@ -65,7 +79,16 @@
 	font-size: 1rem;
 }
 
-@keyframes fadeIn {
-	from { opacity: 0; }
-	to { opacity: 1; }
+::ng-deep .ant-tag {
+    padding: 4px 12px !important;
+    box-shadow: 0 2px 8px fade(@primary-color, 18%);
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid fade(@primary-color, 10%);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+::ng-deep .ant-tag:hover {
+    background: linear-gradient(90deg, #fff 0%, fade(@primary-color, 12%) 100%);
+    box-shadow: 0 4px 16px fade(@primary-color, 28%);
 }

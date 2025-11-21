@@ -16,10 +16,10 @@
     "btnProjects": "Veure projectes",
     "btnCV": "Descarregar CV",
     "claim": {
-      "modular": "+ arquitectura modular",
-      "performance": "+ rendiment",
-      "accessibility": "+ accessibilitat",
-      "scalability": "+ escalabilitat"
+      "modular": "Arquitectura modular",
+      "performance": "Rendiment",
+      "accessibility": "Accessibilitat",
+      "scalability": "Escalabilitat"
     }
   },
   "education": {
